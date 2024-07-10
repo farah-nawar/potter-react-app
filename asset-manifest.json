@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/%3Cpotter-react-app%3E/static/css/main.bc80be34.css",
+    "main.js": "/%3Cpotter-react-app%3E/static/js/main.5b835b72.js",
+    "static/js/453.a86fb0ba.chunk.js": "/%3Cpotter-react-app%3E/static/js/453.a86fb0ba.chunk.js",
+    "static/media/harry.jpg": "/%3Cpotter-react-app%3E/static/media/harry.74ebf0b8b9b76eee5b14.jpg",
+    "index.html": "/%3Cpotter-react-app%3E/index.html",
+    "main.bc80be34.css.map": "/%3Cpotter-react-app%3E/static/css/main.bc80be34.css.map",
+    "main.5b835b72.js.map": "/%3Cpotter-react-app%3E/static/js/main.5b835b72.js.map",
+    "453.a86fb0ba.chunk.js.map": "/%3Cpotter-react-app%3E/static/js/453.a86fb0ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc80be34.css",
+    "static/js/main.5b835b72.js"
+  ]
+}
