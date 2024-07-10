@@ -1,0 +1,51 @@
+/* src/components/Spells.css */
+
+.spells-background {
+    background-image: url('C:\Users\lenovo\Downloads\harry.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .spells-title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .spells-content {
+    padding: 2rem;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .card {
+    background-color: #ffffff; /* Default background color */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    margin-bottom: 0.5rem;
+  }
+  
