@@ -9,7 +9,7 @@ body, html {
 }
 
 .background {
-  background-image: url('C:\Users\lenovo\Downloads\harry.jpg'); 
+  background-image: url('./Assets/harry.jpg'); 
   background-size: cover;
   background-position: center top;
   height: 100vh;

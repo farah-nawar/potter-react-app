@@ -1,0 +1,49 @@
+.house-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  .house-details {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .house-characters {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .house-details h1,
+  .house-characters h2 {
+    color: #333333; 
+  }
+  
+  .house-details p,
+  .house-characters ul,
+  .house-characters li {
+    color: #666666; 
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .house-characters ul {
+    padding: 0;
+  }
+  
+  .house-characters li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  

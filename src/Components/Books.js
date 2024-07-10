@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import './Books.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import '../css/Books.css';
 import { fetchBooks } from '../API/apiBooks';
 
 const Books = () => {
   const [books, setBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     const getBooks = async () => {
@@ -18,6 +19,10 @@ const Books = () => {
   const filteredBooks = books.filter(book =>
     book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleCardClick = (index) => {
+    navigate(`/books/${index}`);
+  };
 
   return (
     <div className="books-background">
@@ -34,15 +39,13 @@ const Books = () => {
         <div className="card-grid">
           {filteredBooks.length > 0 ? (
             filteredBooks.map((book, index) => (
-              <div key={index} className="card">
+              <div key={index} className="card" onClick={() => handleCardClick(index)}>
                 <img src={book.cover} className="card-img-top" alt={book.title} />
                 <div className="card-body">
                   <h5 className="card-title">{book.title}</h5>
                   <p className="card-text">Release Date: {book.releaseDate}</p>
-                  <Link to={`/books/${index}`} className="btn btn-primary">
-                    View Book Details
-                  </Link>
                 </div>
+                
               </div>
             ))
           ) : (

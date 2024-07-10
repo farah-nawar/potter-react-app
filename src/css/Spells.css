@@ -1,5 +1,7 @@
-.houses-background {
-    background-image: url('C:\Users\lenovo\Downloads\harry.jpg');
+/* src/components/Spells.css */
+
+.spells-background {
+    background-image: url('../Assets/harry.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -10,14 +12,14 @@
     overflow-y: auto;
   }
   
-  .houses-title {
+  .spells-title {
     color: white;
     font-size: 3rem;
     text-align: center;
     margin-top: 2rem;
   }
   
-  .houses-content {
+  .spells-content {
     padding: 2rem;
   }
   
@@ -45,9 +47,5 @@
   
   .card-text {
     margin-bottom: 0.5rem;
-  }
-  
-  .btn {
-    margin-top: 1rem;
   }
   

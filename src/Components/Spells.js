@@ -1,6 +1,5 @@
-// src/components/Spells.js
 import React, { useEffect, useState } from 'react';
-import './Spells.css';
+import '../css/Spells.css';
 import { fetchSpells } from '../API/apiSpell';
 
 const Spells = () => {

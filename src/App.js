@@ -1,3 +1,4 @@
+// src/App.js
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -5,6 +6,9 @@ import Books from './Components/Books';
 import Characters from './Components/Characters';
 import Spells from './Components/Spells';
 import Houses from './Components/Houses';
+import HousePage from './Components/SingleHousePage'; 
+import Character from './Components/SingleCharPage';
+import Book from './Components/SingleBookPage';
 
 const App = () => {
   return (
@@ -44,6 +48,10 @@ const App = () => {
           <Route path="/books" element={<Books />} />
           <Route path="/spells" element={<Spells />} />
           <Route path="/houses" element={<Houses />} />
+          <Route path="/houses/:houseIndex" element={<HousePage />} />
+          <Route path="/characters/:characterIndex" element={<Character />} />
+          <Route path="/characters/:bookIndex" element={<Book />} />
+
         </Routes>
       </div>
     </Router>

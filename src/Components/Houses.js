@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Houses.css';
+import '../css/Houses.css';
 import { Link } from 'react-router-dom';
 import { fetchHouses } from '../API/apiHouse';
 
@@ -13,6 +13,7 @@ const Houses = () => {
     };
     getHouses();
   }, []);
+
   return (
     <div className="houses-background">
       <h1 className="houses-title">Houses</h1>
@@ -23,9 +24,12 @@ const Houses = () => {
               <div className="card-body">
                 <h5 className="card-title">{house.house}</h5>
                 <p className="card-text">Founder: {house.founder}</p>
-                <p className="card-text">Animal: {house.animal}</p>               
+                <p className="card-text">Animal: {house.animal}</p>
                 <Link to={`/houses/characters/${index}`} className="btn btn-primary">
                   View Characters
+                </Link>
+                <Link to={`/houses/${index}`} className="btn btn-primary">
+                  View House Details
                 </Link>
               </div>
             </div>

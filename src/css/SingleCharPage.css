@@ -1,0 +1,66 @@
+.character-page {
+    background-image: url('../Assets/harry.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .character-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+  }
+    .character-image {
+    width: 40%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+    .character-details {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .character-details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .character-details p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .character-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .character-details li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+    .btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  

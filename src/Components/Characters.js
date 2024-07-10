@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Characters.css';
+import '../css/Characters.css';
 import { fetchCharacters } from '../API/apiChar';
 import { useNavigate } from 'react-router-dom';
 
@@ -46,7 +46,7 @@ const Characters = () => {
               <div 
                 key={index} 
                 className="card" 
-                onClick={() => handleCardClick(index)}
+                onClick={() => handleCardClick(character.index)}
               >
                 {character.image && <img src={character.image} className="card-img-top" alt={character.name} />}
                 <div className="card-body">
